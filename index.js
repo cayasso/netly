@@ -1,6 +1,12 @@
+ 'use strict';
+
+/**
+ * Module dependencies.
+ */
+
 var parse = require('net-connect').parse;
 var net = require('net');
-var connect = net.connect;
+var connecting = net.connect;
 
 /**
  * Expose `net`.
@@ -37,9 +43,9 @@ net.bind = function bind(port, host, fn) {
  * @api public
  */
 
-net.connect = function connecting(port, host, fn) {
+net.connect = function connect(port, host, fn) {
   var res = format(port, host, fn);
-  return connect.call(net, res.port, res.host, res.fn);
+  return connecting.call(net, res.port, res.host, res.fn);
 };
 
 /**
