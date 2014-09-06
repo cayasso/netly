@@ -1,11 +1,11 @@
-
-[![Build Status](https://circleci.com/gh/segmentio/net-connect.png?circle-token=e9452b79ec91e7630f5a65e7be03fcdbddd5079d)](https://circleci.com/gh/segmentio/net-connect)
-
 # netly
 
-  Make working with net dead simple and slicker.
+[![Build Status](https://travis-ci.org/cayasso/netly.svg?branch=master)](https://travis-ci.org/cayasso/netly)
+[![NPM version](https://badge.fury.io/js/netly.svg)](http://badge.fury.io/js/netly)
 
-## Example
+Make working with net dead simple and slicker.
+
+## Usage
 
 ```js
 var net = require('netly');
@@ -39,19 +39,19 @@ These are all supported arguments:
 ```js
 
   // port
-  var server = net.bind(1337, fn);
+  var server = net.bind(7101, fn);
 
   // ":port"
-  var server = net.bind(':1337', fn);
+  var server = net.bind(':7101', fn);
 
   // "host:port"
-  var server = net.bind('1.2.3.4:1337', fn);
+  var server = net.bind('190.168.1.1:7101', fn);
 
   // { host, port }
-  var server = net.bind({ host: '1.2.3.4', port: 1337 }, fn);
+  var server = net.bind({ host: '190.168.1.1', port: 7101 }, fn);
 
   // { address, port }
-  var server = net.bind({ address: '1.2.3.4', port: 1337 }, fn);
+  var server = net.bind({ address: '190.168.1.1', port: 7101 }, fn);
 ```
 
 ### net.connect(port, [, listener])
@@ -65,19 +65,19 @@ These are all supported arguments:
 var net = require('netly');
 
 // port
-var con = connect(1337, fn);
+var con = connect(7101, fn);
 
 // ":port"
-var conn = net.connect(':1337', fn);
+var conn = net.connect(':7101', fn);
 
 // "host:port"
-var conn = net.connect('1.2.3.4:1337', fn);
+var conn = net.connect('190.168.1.1:7101', fn);
 
 // { host, port }
-var conn = net.connect({ host: '1.2.3.4', port: 1337 }, fn);
+var conn = net.connect({ host: '190.168.1.1', port: 7101 }, fn);
 
 // { address, port }
-var conn = net.connect({ address: '1.2.3.4', port: 1337 }, fn);
+var conn = net.connect({ address: '190.168.1.1', port: 7101 }, fn);
 ```
 
 ## Run Test
