@@ -1,0 +1,29 @@
+{
+  "name": "netly",
+  "version": "0.1.0",
+  "repository": "cayasso/netly",
+  "author": {
+    "name": "Jonathan Brumley",
+    "email": "cayasso@gmail.com"
+  },
+  "description": "Make working with net dead simple and slicker",
+  "keywords": [
+    "net",
+    "connection",
+    "message",
+    "tcp",
+    "connect",
+    "bind",
+    "socket",
+    "server"
+  ],
+  "dependencies": {
+    "net-connect": "^1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "pre-commit": "*",
+    "should": "*"
+  },
+  "license": "MIT"
+}
