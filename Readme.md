@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/cayasso/netly.svg?branch=master)](https://travis-ci.org/cayasso/netly)
 [![NPM version](https://badge.fury.io/js/netly.svg)](http://badge.fury.io/js/netly)
 
-Make working with NodeJS net dead simple and slicker. `netly` uses the parser in [net-connect](https://github.com/juliangruber/net-connect) for parsing paths.
+Make working with NodeJS net dead simple and slicker.
 
 ## Usage
 
@@ -41,9 +41,6 @@ These are all supported arguments:
   // port
   var server = net.bind(7101, fn);
 
-  // ":port"
-  var server = net.bind(':7101', fn);
-
   // "host:port"
   var server = net.bind('190.168.1.1:7101', fn);
 
@@ -66,9 +63,6 @@ var net = require('netly');
 
 // port
 var con = connect(7101, fn);
-
-// ":port"
-var conn = net.connect(':7101', fn);
 
 // "host:port"
 var conn = net.connect('190.168.1.1:7101', fn);

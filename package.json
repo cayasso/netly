@@ -17,9 +17,6 @@
     "socket",
     "server"
   ],
-  "dependencies": {
-    "net-connect": "^1.0.1"
-  },
   "devDependencies": {
     "mocha": "*",
     "pre-commit": "*",

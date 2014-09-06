@@ -31,7 +31,7 @@ describe('netly', function(){
     });
 
     it('should bind with passing an object', function(done){
-      var server = net.bind({ port: 7101, host: '127.0.0.1' }, function(){
+      var server = net.bind({ port: 7101, host: 'tcp://127.0.0.1' }, function(){
         var port = server.address().port;
         net.connect(port).on('connect', done);
       });
@@ -51,7 +51,7 @@ describe('netly', function(){
     it('should connect with port and host', function(done){
       var server = net.bind(function(){
         var port = server.address().port;
-        net.connect(port, '127.0.0.1').on('connect', done);
+        net.connect(port, 'tcp://127.0.0.1').on('connect', done);
       });
     });
 
