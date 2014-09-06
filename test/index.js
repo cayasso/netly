@@ -1,6 +1,5 @@
 
 var net = require('../')
-var ip = require('ip');
 
 describe('netly', function(){
   it('should have required methods', function(){
