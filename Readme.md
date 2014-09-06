@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/cayasso/netly.svg?branch=master)](https://travis-ci.org/cayasso/netly)
 [![NPM version](https://badge.fury.io/js/netly.svg)](http://badge.fury.io/js/netly)
 
-Make working with net dead simple and slicker.
+Make working with NodeJS net dead simple and slicker. `netly` uses the parser in [net-connect](https://github.com/juliangruber/net-connect) for parsing paths.
 
 ## Usage
 
@@ -28,7 +28,7 @@ $ npm install netly
 
 ## API
 
-### net.bind(port, [, listener])
+### net.bind(port, [host], [callback])
 
 Begin accepting connections on the specified `port` and `host`. 
 
@@ -54,7 +54,7 @@ These are all supported arguments:
   var server = net.bind({ address: '190.168.1.1', port: 7101 }, fn);
 ```
 
-### net.connect(port, [, listener])
+### net.connect(port, [host], [callback])
 
   Create a tcp connection to the address specified by `obj`.
 
