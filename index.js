@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-//var parse = require('net-connect').parse;
 var net = require('net');
 var url = require('url');
 var connecting = net.connect;
