@@ -25,5 +25,8 @@
     "pre-commit": "*",
     "should": "*"
   },
+  "scripts": {
+    "test": "make test"
+  },
   "license": "MIT"
 }
