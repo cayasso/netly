@@ -74,6 +74,9 @@ function parse(obj, host, fn) {
       port = obj;
       break;
     case 'string':
+      if ('function' === typeof host) {
+        fn = host;
+      }
       host = obj;
       break;
     case 'undefined':
