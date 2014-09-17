@@ -25,5 +25,8 @@
   "scripts": {
     "test": "make test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "porthost": "^0.1.1"
+  }
 }
